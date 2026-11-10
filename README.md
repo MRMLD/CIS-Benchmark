@@ -4,6 +4,22 @@
 
 **Video demostrativo:** https://youtu.be/3RDcoVWvwRA
 
+[![Video](https://img.shields.io/badge/%E2%96%B6-Video_demostrativo-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/3RDcoVWvwRA)
+[![Informe](https://img.shields.io/badge/%F0%9F%93%84-Informe-blue?style=for-the-badge)](docs/informe.md)
+[![Script](https://img.shields.io/badge/%F0%9F%90%8D-Script-yellow?style=for-the-badge)](scripts/hardening_cis.py)
+[![Configs](https://img.shields.io/badge/%E2%9A%99-Running--configs-green?style=for-the-badge)](running-configs/)
+[![Reportes](https://img.shields.io/badge/%F0%9F%93%8A-Reportes-orange?style=for-the-badge)](reports/)
+[![Capturas](https://img.shields.io/badge/%F0%9F%96%BC-Capturas-purple?style=for-the-badge)](docs/images/)
+
+**Ir directo a:**
+[Topología](docs/informe.md#2-topología) ·
+[Controles CIS](docs/informe.md#4-recomendaciones-aplicadas-y-por-qué) ·
+[Antes](docs/informe.md#5-evidencia-antes-del-hardening) ·
+[Apply](docs/informe.md#6-aplicación-del-hardening) ·
+[Después](docs/informe.md#7-pruebas-después-del-hardening) ·
+[Auditoría final](docs/informe.md#8-auditoría-final) ·
+[Limitaciones](docs/informe.md#10-limitaciones)
+
 | | |
 |---|---|
 | **Autor** | Mario de León |
