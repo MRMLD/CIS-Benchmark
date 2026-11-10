@@ -1,0 +1,98 @@
+Building configuration...
+
+Current configuration : 1253 bytes
+!
+! Last configuration change at 19:33:08 UTC Tue Nov 10 2026
+!
+version 15.2
+service timestamps debug datetime msec
+no service timestamps log uptime
+no service password-encryption
+service compress-config
+!
+hostname SW1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password cisco
+!
+username admin privilege 15 secret 5 $1$hXcH$dW7WtpzNKAL6OIY9NeIy//
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+ip domain-name lab.local
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Ethernet0/0
+ switchport trunk allowed vlan 10,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Ethernet0/1
+ switchport access vlan 10
+ switchport mode access
+!
+interface Ethernet0/2
+ switchport access vlan 99
+ switchport mode access
+!
+interface Ethernet0/3
+!
+interface Vlan99
+ ip address 10.6.82.66 255.255.255.192
+!
+ip default-gateway 10.6.82.65
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ login local
+ transport input all
+!
+!
+!
+end

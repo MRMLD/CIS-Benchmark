@@ -1,0 +1,140 @@
+Building configuration...
+
+Current configuration : 1556 bytes
+!
+! Last configuration change at 19:48:06 UTC Tue Nov 10 2026 by admin
+!
+version 15.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+aqm-register-fnf
+!
+logging buffered 16384
+enable secret 5 $1$Kq53$.7AMv5.lwwwDM/WsOL9aB.
+!
+aaa new-model
+!
+!
+aaa authentication login default local
+aaa authorization exec default local 
+!
+!
+!
+!
+!
+aaa session-id common
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+no ip source-route
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+no ip domain lookup
+ip domain name lab.local
+ip cef
+login block-for 120 attempts 3 within 60
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+username admin privilege 15 secret 5 $1$erYS$5ODUBYK.OJ8h6AizvJGOT.
+!
+redundancy
+!
+no cdp run
+!
+ip ssh version 2
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Ethernet0/0
+ no ip address
+!
+interface Ethernet0/0.10
+ encapsulation dot1Q 10
+ ip address 10.6.82.1 255.255.255.192
+ no ip proxy-arp
+!
+interface Ethernet0/0.99
+ encapsulation dot1Q 99
+ ip address 10.6.82.65 255.255.255.192
+ no ip proxy-arp
+!
+interface Ethernet0/1
+ no ip address
+ shutdown
+!
+interface Ethernet0/2
+ no ip address
+ shutdown
+!
+interface Ethernet0/3
+ no ip address
+ shutdown
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+banner login ^CAcceso restringido. Solo personal autorizado.^C
+!
+line con 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ exec-timeout 5 0
+ transport input ssh
+!
+!
+end

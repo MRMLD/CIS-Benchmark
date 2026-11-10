@@ -1,0 +1,40 @@
+INFORME CIS - modo apply - 20261110_144653
+============================================================
+
+[R1] 10.6.82.65
+ID   Control                                   Antes   Despues
+C01  service password-encryption               FAIL    PASS
+C02  enable secret (sin enable password)       FAIL    PASS
+C03  HTTP/HTTPS server deshabilitado           FAIL    PASS
+C04  CDP deshabilitado                         FAIL    PASS
+C05  SSH version 2                             FAIL    PASS
+C06  VTY solo SSH                              FAIL    PASS
+C07  exec-timeout en VTY                       FAIL    PASS
+C08  Banner de acceso                          FAIL    PASS
+C09  no ip source-route                        FAIL    PASS
+C10  logging buffered                          FAIL    PASS
+C11  login block-for                           FAIL    PASS
+C12  AAA local (authn + authz exec)            FAIL    PASS
+C13  no ip proxy-arp en interfaces con IP      FAIL    PASS
+C14  switchport nonegotiate en trunks          PASS    PASS
+C15  Timestamps en logs                        FAIL    PASS
+Cumplimiento: 15/15
+
+[SW1] 10.6.82.66
+ID   Control                                   Antes   Despues
+C01  service password-encryption               FAIL    PASS
+C02  enable secret (sin enable password)       FAIL    PASS
+C03  HTTP/HTTPS server deshabilitado           FAIL    PASS
+C04  CDP deshabilitado                         FAIL    PASS
+C05  SSH version 2                             FAIL    PASS
+C06  VTY solo SSH                              FAIL    PASS
+C07  exec-timeout en VTY                       FAIL    PASS
+C08  Banner de acceso                          FAIL    PASS
+C09  no ip source-route                        FAIL    PASS
+C10  logging buffered                          FAIL    PASS
+C11  login block-for                           FAIL    PASS
+C12  AAA local (authn + authz exec)            FAIL    PASS
+C13  no ip proxy-arp en interfaces con IP      FAIL    PASS
+C14  switchport nonegotiate en trunks          FAIL    PASS
+C15  Timestamps en logs                        FAIL    PASS
+Cumplimiento: 15/15

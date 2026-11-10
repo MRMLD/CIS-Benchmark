@@ -1,0 +1,25 @@
+INFORME CIS - modo audit - 20261110_151044
+============================================================
+
+[R1] 10.6.82.65
+ERROR: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.6.82.65:22
+
+
+
+[SW1] 10.6.82.66
+ERROR: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.6.82.66:22
+

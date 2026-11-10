@@ -1,0 +1,40 @@
+INFORME CIS - modo audit - 20261110_143907
+============================================================
+
+[R1] 10.6.82.65
+ID   Control                                   Antes   
+C01  service password-encryption               FAIL    
+C02  enable secret (sin enable password)       FAIL    
+C03  HTTP/HTTPS server deshabilitado           FAIL    
+C04  CDP deshabilitado                         FAIL    
+C05  SSH version 2                             FAIL    
+C06  VTY solo SSH                              FAIL    
+C07  exec-timeout en VTY                       FAIL    
+C08  Banner de acceso                          FAIL    
+C09  no ip source-route                        FAIL    
+C10  logging buffered                          FAIL    
+C11  login block-for                           FAIL    
+C12  AAA local (authn + authz exec)            FAIL    
+C13  no ip proxy-arp en interfaces con IP      FAIL    
+C14  switchport nonegotiate en trunks          PASS    
+C15  Timestamps en logs                        FAIL    
+Cumplimiento: 1/15
+
+[SW1] 10.6.82.66
+ID   Control                                   Antes   
+C01  service password-encryption               FAIL    
+C02  enable secret (sin enable password)       FAIL    
+C03  HTTP/HTTPS server deshabilitado           FAIL    
+C04  CDP deshabilitado                         FAIL    
+C05  SSH version 2                             FAIL    
+C06  VTY solo SSH                              FAIL    
+C07  exec-timeout en VTY                       FAIL    
+C08  Banner de acceso                          FAIL    
+C09  no ip source-route                        FAIL    
+C10  logging buffered                          FAIL    
+C11  login block-for                           FAIL    
+C12  AAA local (authn + authz exec)            FAIL    
+C13  no ip proxy-arp en interfaces con IP      FAIL    
+C14  switchport nonegotiate en trunks          FAIL    
+C15  Timestamps en logs                        FAIL    
+Cumplimiento: 0/15

@@ -1,0 +1,101 @@
+{
+  "R1": {
+    "before": {
+      "C01": [
+        "global"
+      ],
+      "C02": [
+        "global"
+      ],
+      "C03": [
+        "global"
+      ],
+      "C04": [
+        "global"
+      ],
+      "C05": [
+        "global"
+      ],
+      "C06": [
+        "line vty 0 4"
+      ],
+      "C07": [
+        "line vty 0 4"
+      ],
+      "C08": [
+        "global"
+      ],
+      "C09": [
+        "global"
+      ],
+      "C10": [
+        "global"
+      ],
+      "C11": [
+        "global"
+      ],
+      "C12": [
+        "global"
+      ],
+      "C13": [
+        "interface Ethernet0/0.10",
+        "interface Ethernet0/0.99"
+      ],
+      "C14": [],
+      "C15": [
+        "global"
+      ]
+    },
+    "after": null
+  },
+  "SW1": {
+    "before": {
+      "C01": [
+        "global"
+      ],
+      "C02": [
+        "global"
+      ],
+      "C03": [
+        "global"
+      ],
+      "C04": [
+        "global"
+      ],
+      "C05": [
+        "global"
+      ],
+      "C06": [
+        "line vty 0 4"
+      ],
+      "C07": [
+        "line vty 0 4"
+      ],
+      "C08": [
+        "global"
+      ],
+      "C09": [
+        "global"
+      ],
+      "C10": [
+        "global"
+      ],
+      "C11": [
+        "global"
+      ],
+      "C12": [
+        "global"
+      ],
+      "C13": [
+        "interface Vlan99"
+      ],
+      "C14": [
+        "interface Ethernet0/0"
+      ],
+      "C15": [
+        "global"
+      ]
+    },
+    "after": null
+  }
+}

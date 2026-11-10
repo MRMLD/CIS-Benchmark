@@ -1,0 +1,119 @@
+Building configuration...
+
+Current configuration : 1628 bytes
+!
+! Last configuration change at 19:49:28 UTC Tue Nov 10 2026 by admin
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+service compress-config
+!
+hostname SW1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+logging buffered 16384
+enable secret 5 $1$bcjq$XrjG5sE9/jKZKiOpW8CqO/
+!
+username admin privilege 15 secret 5 $1$hXcH$dW7WtpzNKAL6OIY9NeIy//
+aaa new-model
+!
+!
+aaa authentication login default local
+aaa authorization exec default local 
+!
+!
+!
+!
+!
+!
+aaa session-id common
+!
+!
+!
+!
+!
+no ip source-route
+!
+!
+!
+no ip domain-lookup
+ip domain-name lab.local
+ip cef
+login block-for 120 attempts 3 within 60
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+no cdp run
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Ethernet0/0
+ switchport trunk allowed vlan 10,99
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport nonegotiate
+!
+interface Ethernet0/1
+ switchport access vlan 10
+ switchport mode access
+!
+interface Ethernet0/2
+ switchport access vlan 99
+ switchport mode access
+!
+interface Ethernet0/3
+!
+interface Vlan99
+ ip address 10.6.82.66 255.255.255.192
+ no ip proxy-arp
+!
+ip default-gateway 10.6.82.65
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip ssh version 2
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+banner login ^CAcceso restringido. Solo personal autorizado.^C
+!
+line con 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ exec-timeout 5 0
+ transport input ssh
+!
+!
+!
+end

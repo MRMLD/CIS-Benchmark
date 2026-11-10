@@ -1,0 +1,40 @@
+INFORME CIS - modo audit - 20261110_151151
+============================================================
+
+[R1] 10.6.82.65
+ID   Control                                   Antes   
+C01  service password-encryption               PASS    
+C02  enable secret (sin enable password)       PASS    
+C03  HTTP/HTTPS server deshabilitado           PASS    
+C04  CDP deshabilitado                         PASS    
+C05  SSH version 2                             PASS    
+C06  VTY solo SSH                              PASS    
+C07  exec-timeout en VTY                       PASS    
+C08  Banner de acceso                          PASS    
+C09  no ip source-route                        PASS    
+C10  logging buffered                          PASS    
+C11  login block-for                           PASS    
+C12  AAA local (authn + authz exec)            PASS    
+C13  no ip proxy-arp en interfaces con IP      PASS    
+C14  switchport nonegotiate en trunks          PASS    
+C15  Timestamps en logs                        PASS    
+Cumplimiento: 15/15
+
+[SW1] 10.6.82.66
+ID   Control                                   Antes   
+C01  service password-encryption               PASS    
+C02  enable secret (sin enable password)       PASS    
+C03  HTTP/HTTPS server deshabilitado           PASS    
+C04  CDP deshabilitado                         PASS    
+C05  SSH version 2                             PASS    
+C06  VTY solo SSH                              PASS    
+C07  exec-timeout en VTY                       PASS    
+C08  Banner de acceso                          PASS    
+C09  no ip source-route                        PASS    
+C10  logging buffered                          PASS    
+C11  login block-for                           PASS    
+C12  AAA local (authn + authz exec)            PASS    
+C13  no ip proxy-arp en interfaces con IP      PASS    
+C14  switchport nonegotiate en trunks          PASS    
+C15  Timestamps en logs                        PASS    
+Cumplimiento: 15/15
